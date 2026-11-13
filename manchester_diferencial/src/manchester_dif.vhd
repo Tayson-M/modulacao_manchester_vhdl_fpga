@@ -16,21 +16,19 @@ led
 : out std_logic_vector(15 downto 0)
 );
 end manchester_dif;
+
 architecture rtl of manchester_dif is
-constant HALF_BIT : integer := CYCLES_PER_BIT / 2;
-signal rst_meta  : std_logic := '1';
-signal rst_sync  : std_logic := '1';
-signal cnt       
-: integer range 0 to CYCLES_PER_BIT - 1 := 0;
-signal idx       
-signal pos       
-: integer range 0 to 15 := 15;
-: integer range 0 to 15 := 15;
- signal bit_atual : std_logic := '0';
-    signal nivel     : std_logic := '0';
-    signal out_reg   : std_logic := '0';
-    signal nrz_reg   : std_logic := '0';
-    signal led_reg   : std_logic_vector(15 downto 0) := (others => '0');
+        constant HALF_BIT : integer := CYCLES_PER_BIT / 2;
+        signal rst_meta  : std_logic := '1';
+        signal rst_sync  : std_logic := '1';
+        signal cnt       : integer range 0 to CYCLES_PER_BIT - 1 := 0;
+        signal idx       : integer range 0 to 15 := 15;
+        signal pos       : integer range 0 to 15 := 15;
+        signal bit_atual : std_logic := '0';
+        signal nivel     : std_logic := '0';
+        signal out_reg   : std_logic := '0';
+        signal nrz_reg   : std_logic := '0';
+        signal led_reg   : std_logic_vector(15 downto 0) := (others => '0');
 begin
     process(clk)
     begin
