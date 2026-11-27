@@ -33,7 +33,9 @@ e uma pasta `saidas/` com as saídas PMOD (osciloscópio) e VGA.
 
 ## Relatório
 - [Relatório técnico final](./relatorio_final/relatorio.pdf)
-- [Vídeo de demonstração](./relatorio_final/video_demo.mp4)
+- [Vídeo de demonstração do VGA](https://github.com/user-attachments/assets/e37dda7d-78a2-4d72-880f-d25fb86633c8)
+- [Vídeo de demonstração do PMOD](https://github.com/user-attachments/assets/ba210b33-666e-466d-933f-9549bb397525)
+
 
 ## Ferramentas utilizadas
 - Vivado 2025.2 (Vivado Simulator)
